@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.screen{
+	min-height: 100vh;
+	width: 100%;
+	background: inherit;
+	background-image: url(images/kitchen.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.front{
+	min-height: 100vh;
+	width: 100%;
+	background: rgba(4, 9, 30, 0.7);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+
+}
+.navs{
+	display: flex;
+}
+.navlinks{
+	flex: 1;
+	text-align: right;
+	margin-top: 25px;
+	margin-right: 5px;
+}
+.logo a{
+	display: flex;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+.logo a p{
+	font-size: 30px;
+	font-family: cursive;
+	font-weight: bold;
+	margin-top: 20px;
+}
+.navs .logo img{
+	width: 200px;
+	margin-left: 10px;
+}
+.navs .navlinks ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin: 4px;
+}
+.navs .navlinks ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.navlinks ul li{
+	border: 0px solid lightgoldenrodyellow;
+	transition: 0.2s linear;
+}
+.navlinks ul li:hover{
+	border-bottom: 5px solid yellow;
+}
+.cont{
+	display: flex;
+}
+.cont .left{
+	width: 50%;
+	text-align: center;
+}
+.cont .left .section{
+	margin-top: 200px;
+}
+.cont .left .section h1{
+	margin-bottom: 10px;
+	color: #fff;
+	font-family: sans-serif;
+	animation-name: glow;
+	animation-duration: 2s;
+	animation-direction: alternate-reverse;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+/*-----animation*/
+
+@keyframes glow{
+	0%{
+		opacity: 0.5;
+	}
+	25%{
+		opacity: 0.7;
+	}
+	50%{
+		opacity: 0.9;
+	}
+	100%{
+		opacity: 1.0;
+	}
+}
+.cont .left .section p{
+	margin-bottom: 20px;
+	color: lightyellow;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: monospace;
+	text-transform: capitalize;
+
+	animation-name: glow;
+	animation-duration: 2s;
+	animation-direction: alternate-reverse;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+
+}
+
+.cont .left .section a{
+	font-weight: bold;
+	font-size: 30px;
+	font-family: monospace;
+	text-decoration: none;
+	color: burlywood;
+	transition: 0.3s;
+	border-bottom: 2px solid yellow;
+}
+.cont .left .section a:hover{
+	color: white;
+	border-bottom: 7px solid yellow;
+}
+.cont .right{
+	width: 50%;
+}
+.cont .right img{
+	width: 650px;
+}
+.middle{
+	display: flex;
+}
+.middle .testa {
+	width: 50%;
+}
+.middle .testb {
+	width: 50%;
+}
+.middle .testb img{
+	width: 400px;
+}
+/*Responsive Design*/
+@media(max-width: 700px){
+	.navs .logo img{
+	width: 150px;
+}
+.cont .left{
+	width: 50%;
+	text-align: center;
+}
+.logo a p{
+	font-size: 18px;
+}
+.cont .left .section{
+	margin-top: 50px;
+}
+.cont .left .section h1{
+	font-size: 11px;
+}
+.cont .right img{
+	margin-top: 50px;
+	width: 200px;
+}
+.cont .right{
+	width: 40%;
+}
+
+}
